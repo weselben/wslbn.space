@@ -9,7 +9,7 @@ jobs:
   docker-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Build blog image (runs npm run generate inside Dockerfile)
         run: docker build -t wslbn-space-blog:ci .
