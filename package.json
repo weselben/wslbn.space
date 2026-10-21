@@ -11,10 +11,10 @@
     "wrangler:deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@nuxt/content": "^3.6.3",
+    "@nuxt/content": "^3.16.2",
     "@nuxtjs/color-mode": "^4.0.1",
     "better-sqlite3": "^12.5.0",
-    "nuxt": "^4.0.0",
+    "nuxt": "^4.6.2",
     "vue": "^3.5.0",
     "vue-router": "^5.4.0"
   },
