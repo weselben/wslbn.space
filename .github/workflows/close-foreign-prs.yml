@@ -16,7 +16,7 @@ jobs:
       github.actor != 'dependabot[bot]'
     steps:
       - name: Close PR with explanation
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const num = context.issue.number;
