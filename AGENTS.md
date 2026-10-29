@@ -273,8 +273,12 @@ Not `http://localhost:80` — that resolves to the `cloudflared` container.
 ## Pull requests
 
 - Title: Conventional Commits — `<type>(<scope>): <summary>` (`feat: …`,
-  `fix: …`, `chore: …`, `docs: …`, `content: …`). Applies to PR titles and
+  `fix: …`, `chore: …`, `docs: …`). Applies to PR titles and
   to the squash commit subject alike.
+- **Posts use `post:`.** Any commit touching `content/posts/*` — new posts
+  *and* edits to existing ones — commits as `post: <summary>`, never
+  `feat:`, `docs:` or `content:`. Example: `post: packaging gomodel for
+  arch linux`. Site code/docs keep the standard types above.
 - **Squash-merge only.** One commit lands on `main` per PR — never a merge
   commit, never a rebase pile. Enforced in the repo's merge settings (only
   "Squash and merge" is enabled).
