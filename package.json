@@ -11,16 +11,16 @@
     "wrangler:deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@nuxt/content": "^3.16.2",
+    "@nuxt/content": "^3.17.0",
     "@nuxtjs/color-mode": "^4.1.0",
     "better-sqlite3": "^12.5.0",
     "nuxt": "^4.6.4",
-    "vue": "^3.5.0",
-    "vue-router": "^5.4.0"
+    "vue": "^3.5.46",
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.0",
+    "@tailwindcss/vite": "^4.3.5",
     "oxc-parser": "^0.155.0",
     "tailwindcss": "^4.1.0",
     "wrangler": "^4.154.0"
