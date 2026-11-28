@@ -3,3 +3,16 @@
 
 /* Class-based dark mode: @nuxtjs/color-mode toggles `.dark` on <html>. */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Safari: long Shiki code lines propagate their intrinsic min-content
+   width past the <pre>'s `overflow-x: auto` and push <html>/<body>
+   wider than the viewport on mobile. Clamp horizontal overflow at the
+   article boundary so the <pre> stays the only horizontal scroller. */
+.prose {
+  overflow-x: clip;
+}
+@supports not (overflow-x: clip) {
+  .prose {
+    overflow-x: hidden;
+  }
+}
